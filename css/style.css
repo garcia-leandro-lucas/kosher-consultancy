@@ -1,0 +1,357 @@
+/*  Starting external fonts  */
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../src/assets/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../src/assets/fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../src/assets/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../src/assets/fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed Regular";
+  src: url("../src/assets/fonts/roboto/RobotoCondensed-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Condensed Bold";
+  src: url("../src/assets/fonts/roboto/RobotoCondensed-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+/*  End external fonts  */
+:root {
+  scroll-behavior: smooth;
+  /*  Measures  */
+  --medida-raiz: 62.5%;
+  --swiper-navigation-size: 20px;
+  /*  End measures  */
+  /* Colours */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-green: #017a38;
+  --color-light-green: #daece0;
+  --color-dark-blue: #323e48;
+  --color-tranparent: transparent;
+  /* End Colours */
+  /*  Fonts  */
+  --font-roboto-regular: Roboto Regular;
+  --font-roboto-medium: Roboto Medium;
+  --font-roboto-bold: Roboto Bold;
+  --font-roboto-light: Roboto Light;
+  --font-roboto-condensed-regular: Roboto Condensed Regular;
+  --font-roboto-condensed-bold: Roboto Condensed Bold;
+  /*  End fonts  */
+}
+
+/* 2 */
+/* 1 */
+/*
+* Inicio Generales
+*
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: var(--medida-raiz);
+}
+
+body {
+  font-size: 1.6em;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+.section-content {
+  width: 100%;
+  margin: auto;
+}
+
+.font-heredada {
+  font-weight: inherit;
+}
+
+.imagen-responsive {
+  width: 100%;
+}
+
+.line-height-0 {
+  line-height: 0;
+}
+
+.line-height-0-8 {
+  line-height: 0.8;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+.width-1 {
+  width: 1em;
+}
+
+.width-2 {
+  width: 2em;
+}
+
+.width-2-5 {
+  width: 2.5em;
+}
+
+.width-12 {
+  width: 12em;
+}
+
+.width-8 {
+  width: 8em;
+}
+
+.width-cont {
+  width: 80%;
+}
+
+.height-3 {
+  height: 3em;
+  /* 48/16 */
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-t-b-40 {
+  margin-top: 2.5em;
+  /* 40/16 */
+  margin-bottom: 2.5em;
+  /* 40/16 */
+}
+
+.margin-t-b-10 {
+  margin-top: 0.625em;
+  /* 10/16 */
+  margin-bottom: 0.625em;
+  /* 10/16 */
+}
+
+.margin-40-auto {
+  margin: 2.5em auto;
+  /* 40/16 */
+}
+
+.margin-b-0 {
+  margin-bottom: 0;
+}
+
+.margin-b-10 {
+  margin-bottom: 0.625em;
+  /* 10/16 */
+}
+
+.margin-b-20 {
+  margin-bottom: 1.25em;
+  /* 20/16 */
+}
+
+.margin-b-40 {
+  margin-bottom: 2.5em;
+  /* 40/16 */
+}
+
+.margin-t-10 {
+  margin-top: 0.625em;
+  /* 10/16 */
+}
+
+.margin-t-30 {
+  margin-top: 1.875em;
+  /* 30/16 */
+}
+
+.margin-t-20 {
+  margin-top: 1.25em;
+  /* 20/16 */
+}
+
+.margin-t-20-auto {
+  margin-top: 1.25em auto;
+  /* 20/16 */
+}
+
+.padding-t-b-50 {
+  padding-top: 3.125em;
+  /* 50/16 */
+  padding-bottom: 3.125em;
+  /* 50/16 */
+}
+
+.padding-30 {
+  padding: 1.875em;
+  /* 30/16 */
+}
+
+.top-30 {
+  top: 30px;
+}
+
+.top-40 {
+  top: 40px;
+}
+
+.top-70 {
+  top: 70px;
+}
+
+.top-80 {
+  top: 80px;
+}
+
+.top-115 {
+  top: 115px;
+}
+
+.top-130 {
+  top: 130px;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-black {
+  color: var(--color-negro);
+}
+
+.color-check {
+  color: var(--color-verde-check);
+}
+
+.color-error {
+  color: var(--color-rojo-error);
+}
+
+.border-none {
+  border: none;
+}
+
+.text-roboto-r {
+  font-family: var(--font-roboto-regular);
+}
+
+.text-roboto-m {
+  font-family: var(--font-roboto-medium);
+}
+
+.text-roboto-b {
+  font-family: var(--font-roboto-bold);
+}
+
+.text-roboto-l {
+  font-family: var(--font-roboto-light);
+}
+
+.text-roboto-c-r {
+  font-family: var(--font-roboto-condensed-regular);
+}
+
+.text-roboto-c-b {
+  font-family: var(--font-roboto-condensed-bold);
+}
+
+.text-size-15 {
+  font-size: 0.9375em;
+  /* 15/16 */
+}
+
+.text-size-13-6 {
+  font-size: 0.85em;
+}
+
+.text-size-30 {
+  font-size: 3rem;
+}
+
+.text-size-25 {
+  font-size: 2.5rem;
+}
+
+.text-size-13 {
+  font-size: 0.8125em;
+  /* 13/16 */
+}
+
+.text-size-16 {
+  font-size: 16px;
+}
+
+.text-size-10 {
+  font-size: 10rem;
+}
+
+/*
+* Fin Generales
+*
+*/
+/*
+ * Inicio de index.html
+ *
+*/
+/*
+ * Fin de index.html
+ *
+*/
+/*
+ * #######################
+ * #######################
+ * #######################
+ * Inicio de Media Queries
+ * #######################
+ * #######################
+ * #######################
+*/
+/* Mobile Styles */
+/* Tablet Styles */
+/* Desktop Styles */
+/*
+ * #######################
+ * #######################
+ * #######################
+ *   Fin de Media Queries
+ * #######################
+ * #######################
+ * #######################
+*/
+
+/*# sourceMappingURL=style.css.map */

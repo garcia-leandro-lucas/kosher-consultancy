@@ -1,0 +1,159 @@
+/*  Starting external fonts  */
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../src/assets/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../src/assets/fonts/roboto/Roboto-Medium.ttf') format('truetype');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../src/assets/fonts/roboto/Roboto-Bold.ttf') format('truetype');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../src/assets/fonts/roboto/Roboto-Light.ttf') format('truetype');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Regular';
+    src: url('../src/assets/fonts/roboto/RobotoCondensed-Regular.ttf') format('truetype');
+
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed Bold';
+    src: url('../src/assets/fonts/roboto/RobotoCondensed-Bold.ttf') format('truetype');
+
+    font-display: swap;
+}
+/*  End external fonts  */
+
+:root {
+    scroll-behavior: smooth;
+    /*  Measures  */
+    --medida-raiz: 62.5%;
+    --swiper-navigation-size: 20px;
+    /*  End measures  */
+
+    /* Colours */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-green: #017a38;
+    --color-light-green: #daece0;
+    --color-dark-blue: #323e48;
+    --color-tranparent: transparent;
+    /* End Colours */
+
+    /*  Fonts  */
+    --font-roboto-regular: Roboto Regular;
+    --font-roboto-medium: Roboto Medium;
+    --font-roboto-bold: Roboto Bold;
+    --font-roboto-light: Roboto Light;
+    --font-roboto-condensed-regular: Roboto Condensed Regular;
+    --font-roboto-condensed-bold: Roboto Condensed Bold;
+    /*  End fonts  */
+}
+
+$grid-breakpoints: (
+    mobile-a: 360px,
+    tablet-a: 361px,
+    tablet-b: 767px,
+    tablet-c: 768px,
+    tablet-d: 1060px,
+    desktop: 1061px
+ );
+
+@mixin break-point-tablet($breakpoints) {
+    @media screen and (max-width: map-get($grid-breakpoints, $breakpoints)){ 
+        @content;
+    }
+}
+
+$colores:
+    #ffffff, /* 1 */
+    #000000; /* 2 */
+
+$fuentes:
+    Roboto Regular; /* 1 */
+
+@mixin sizes-w($width){
+    width: $width;
+}
+
+@mixin sizes-w-h($width,$height){
+    width: $width;
+    height: $height;
+}
+
+@mixin btn-descargar ($width, $padding, $display, $justify-content, $border-radius) {
+    width: $width;
+    padding: $padding;
+    display: $display;
+    justify-content: $justify-content;
+    border-radius: $border-radius;
+}
+
+@mixin margin-t-b($margin-top, $margin-bottom){
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin margin($margin){
+    margin: $margin;
+}
+
+@mixin padding($padding){
+    padding: $padding;
+}
+
+%btn {
+    border-radius: 200px;
+    color: nth($colores, 1);
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+}
+
+%bg-image{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+$btn-footer-desaphilip: (
+
+    bg-color-rojo-invitar-amigos:var(--color-rojo),
+    bg-color-violeta-descubri:var(--color-violeta),
+
+    bg-bordo-medio-invitar-amigos:var(--color-bordo-medio),
+    bg-violeta-medio-descubri:var(--color-violeta-medio),
+
+    transition: all 0.5s
+);
+
+
+
+
+
+
+
+
+
+
+
+
