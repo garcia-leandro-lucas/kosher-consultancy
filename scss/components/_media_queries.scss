@@ -9,8 +9,35 @@
 */
 
 /* Mobile Styles */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 360px) {
 
+    /*
+     * Inicio de index.html
+     *
+    */
+
+    .content-kosher-consultancy {
+        nav {
+            .brand-logo{
+                object {
+                    width: 10em;
+                }
+            } 
+
+            .navigation-links {
+                justify-content: center;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+    /*
+     * Fin de index.html
+     *
+    */
 
 }
 

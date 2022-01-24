@@ -328,6 +328,60 @@ p {
  * Inicio de index.html
  *
 */
+.content-kosher-consultancy nav .brand-logo {
+  display: flex;
+  align-items: center;
+}
+.content-kosher-consultancy nav .brand-logo .brand-logo-object {
+  display: flex;
+}
+.content-kosher-consultancy nav .brand-logo .brand-logo-object object {
+  width: 14em;
+}
+.content-kosher-consultancy nav .navigation-links {
+  justify-content: end;
+}
+.content-kosher-consultancy nav .navigation-links .navbar-nav .nav-item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.content-kosher-consultancy nav .navigation-links .navbar-nav .nav-item a {
+  font-family: var(--font-roboto-condensed-bold);
+  color: var(--color-white);
+  color: #FFF;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+.content-kosher-consultancy nav .navigation-links .navbar-nav .nav-item a:hover {
+  color: var(--color-green);
+  transition: all 0.5s;
+}
+.content-kosher-consultancy nav .navigation-links .navbar-nav .nav-item a:before, .content-kosher-consultancy nav .navigation-links .navbar-nav .nav-item a:after {
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 1px;
+  content: "";
+  background: #FFF;
+  transition: all 0.3s;
+}
+.content-kosher-consultancy nav .navigation-links .navbar-nav .nav-item a:before {
+  left: 0px;
+  top: 0px;
+}
+.content-kosher-consultancy nav .navigation-links .navbar-nav .nav-item a:after {
+  right: 0px;
+  bottom: 0px;
+}
+.content-kosher-consultancy nav .navigation-links .navbar-nav .nav-item a:hover:before, .content-kosher-consultancy nav .navigation-links .navbar-nav .nav-item a:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
 /*
  * Fin de index.html
  *
@@ -342,6 +396,26 @@ p {
  * #######################
 */
 /* Mobile Styles */
+@media only screen and (max-width: 360px) {
+  /*
+   * Inicio de index.html
+   *
+  */
+  .content-kosher-consultancy nav .brand-logo object {
+    width: 10em;
+  }
+  .content-kosher-consultancy nav .navigation-links {
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  /*
+   * Fin de index.html
+   *
+  */
+}
 /* Tablet Styles */
 /* Desktop Styles */
 /*

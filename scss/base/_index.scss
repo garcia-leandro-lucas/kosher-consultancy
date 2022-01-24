@@ -3,7 +3,75 @@
  *
 */
 
+.content-kosher-consultancy {
+    nav {
+        .brand-logo{
+            display: flex;
+            align-items: center;
 
+            .brand-logo-object {
+                display: flex;
+
+                object {
+                    width: 14em;
+                }
+            }
+        } 
+
+        .navigation-links {
+            justify-content: end;
+
+            .navbar-nav {
+                .nav-item {
+                    margin-left: 20px;
+                    margin-right: 20px;
+
+                    a {
+                        font-family: var(--font-roboto-condensed-bold);
+                        color: var(--color-white);
+                        color: #FFF;
+                        text-decoration: none;
+                        margin: 0px 10px;
+                        padding: 10px 10px;
+                        position: relative;
+                        z-index: 0;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: var(--color-green);
+                            transition: all 0.5s;
+                        } 
+
+                        &:before, &:after {
+                            position: absolute;
+                            opacity: 0;
+                            width: 0%;
+                            height: 1px;
+                            content: '';
+                            background: #FFF;
+                            transition: all 0.3s;
+                        }
+
+                        &:before {
+                            left: 0px;
+                            top: 0px;
+                        }
+
+                        &:after {
+                            right: 0px;
+                            bottom: 0px;
+                        }
+
+                        &:hover:before, &:hover:after {
+                            opacity: 1;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 /*
