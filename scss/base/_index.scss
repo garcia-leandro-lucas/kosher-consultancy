@@ -4,6 +4,7 @@
 */
 
 .content-kosher-consultancy {
+    /* Start header */
     nav {
         .brand-logo{
             display: flex;
@@ -71,6 +72,41 @@
             }
         }
     }
+    /* End Header */
+
+    /* Start main */
+
+    /* Start section id="carouselHome" */
+
+    #carouselHome {
+        .carousel-caption {
+            background-color: #21252985;
+            border-radius: 4px;
+            bottom: 15rem;
+
+            h5 {
+                font-family: var(--font-roboto-condensed-bold);
+                font-size: 5rem;
+            }
+
+            p {
+                font-family: var(--font-roboto-condensed-regular);
+                font-size: 2.5rem;
+            }
+        }
+
+        button {
+            .carousel-control-next-icon, .carousel-control-prev-icon {
+                width: 10rem;
+                height: 10rem;
+            }   
+        }
+    }
+
+    /* End section id="carouselHome" */
+
+    /* End main */
+
 }
 
 

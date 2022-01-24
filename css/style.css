@@ -70,6 +70,13 @@ html {
   font-size: var(--medida-raiz);
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
 body {
   font-size: 1.6em;
 }
@@ -328,6 +335,14 @@ p {
  * Inicio de index.html
  *
 */
+.content-kosher-consultancy {
+  /* Start header */
+  /* End Header */
+  /* Start main */
+  /* Start section id="carouselHome" */
+  /* End section id="carouselHome" */
+  /* End main */
+}
 .content-kosher-consultancy nav .brand-logo {
   display: flex;
   align-items: center;
@@ -381,6 +396,23 @@ p {
   opacity: 1;
   width: 100%;
 }
+.content-kosher-consultancy #carouselHome .carousel-caption {
+  background-color: #21252985;
+  border-radius: 4px;
+  bottom: 15rem;
+}
+.content-kosher-consultancy #carouselHome .carousel-caption h5 {
+  font-family: var(--font-roboto-condensed-bold);
+  font-size: 5rem;
+}
+.content-kosher-consultancy #carouselHome .carousel-caption p {
+  font-family: var(--font-roboto-condensed-regular);
+  font-size: 2.5rem;
+}
+.content-kosher-consultancy #carouselHome button .carousel-control-next-icon, .content-kosher-consultancy #carouselHome button .carousel-control-prev-icon {
+  width: 10rem;
+  height: 10rem;
+}
 
 /*
  * Fin de index.html
@@ -396,11 +428,19 @@ p {
  * #######################
 */
 /* Mobile Styles */
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 360px) and (max-width: 992px) {
   /*
    * Inicio de index.html
    *
   */
+  .content-kosher-consultancy {
+    /* Start header */
+    /* End header */
+    /* Start main */
+    /* Start section id="carouselHome" */
+    /* End section id="carouselHome" */
+    /* End main */
+  }
   .content-kosher-consultancy nav .brand-logo object {
     width: 10em;
   }
@@ -409,6 +449,18 @@ p {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .content-kosher-consultancy #carouselHome {
+    margin-top: 70px;
+  }
+  .content-kosher-consultancy #carouselHome .carousel-caption {
+    bottom: 3rem;
+  }
+  .content-kosher-consultancy #carouselHome .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+  .content-kosher-consultancy #carouselHome .carousel-caption p {
+    font-size: 1rem;
   }
 
   /*

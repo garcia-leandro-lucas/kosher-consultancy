@@ -9,7 +9,8 @@
 */
 
 /* Mobile Styles */
-@media only screen and (max-width: 360px) {
+
+@media only screen and (min-width: 360px) and (max-width: 992px) {
 
     /*
      * Inicio de index.html
@@ -17,6 +18,7 @@
     */
 
     .content-kosher-consultancy {
+        /* Start header */
         nav {
             .brand-logo{
                 object {
@@ -31,6 +33,26 @@
                 margin-bottom: 30px;
             }
         }
+        /* End header */
+
+        /* Start main */
+        /* Start section id="carouselHome" */
+        #carouselHome {
+            margin-top: 70px;
+            .carousel-caption {
+                bottom: 3rem;
+
+                h5 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+        /* End section id="carouselHome" */
+        /* End main */
     }
 
 
