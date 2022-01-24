@@ -89,15 +89,6 @@ li {
   list-style: none;
 }
 
-p {
-  margin: 0;
-}
-
-.section-content {
-  width: 100%;
-  margin: auto;
-}
-
 .font-heredada {
   font-weight: inherit;
 }
@@ -341,6 +332,8 @@ p {
   /* Start main */
   /* Start section id="carouselHome" */
   /* End section id="carouselHome" */
+  /* Start section id="whatIsKosher" */
+  /* End section id="whatIsKosher" */
   /* End main */
 }
 .content-kosher-consultancy nav .brand-logo {
@@ -396,6 +389,10 @@ p {
   opacity: 1;
   width: 100%;
 }
+.content-kosher-consultancy .section-content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .content-kosher-consultancy #carouselHome .carousel-caption {
   background-color: #21252985;
   border-radius: 4px;
@@ -412,6 +409,24 @@ p {
 .content-kosher-consultancy #carouselHome button .carousel-control-next-icon, .content-kosher-consultancy #carouselHome button .carousel-control-prev-icon {
   width: 10rem;
   height: 10rem;
+}
+.content-kosher-consultancy #whatIsKosher .title.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content-kosher-consultancy #whatIsKosher .title.container h1 {
+  font-family: var(--font-roboto-bold);
+  font-size: 50px;
+  color: var(--color-green);
+}
+.content-kosher-consultancy #whatIsKosher .content-what-is-kosher {
+  display: flex;
+  align-items: center;
+}
+.content-kosher-consultancy #whatIsKosher .content-what-is-kosher .text p {
+  font-family: var(--font-roboto-medium);
 }
 
 /*

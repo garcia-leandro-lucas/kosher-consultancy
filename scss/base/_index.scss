@@ -78,6 +78,11 @@
 
     /* Start section id="carouselHome" */
 
+    .section-content {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
     #carouselHome {
         .carousel-caption {
             background-color: #21252985;
@@ -104,6 +109,33 @@
     }
 
     /* End section id="carouselHome" */
+
+    /* Start section id="whatIsKosher" */
+    #whatIsKosher {
+        .title.container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            h1 {
+                font-family: var(--font-roboto-bold);
+                font-size: 50px;
+                color: var(--color-green);
+            }
+        }
+
+        .content-what-is-kosher {
+            display: flex;
+            align-items:center;
+            .text {
+                p {
+                    font-family: var(--font-roboto-medium);
+                }
+            }
+        }
+    }
+    /* End section id="whatIsKosher" */
 
     /* End main */
 
