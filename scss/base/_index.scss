@@ -128,9 +128,11 @@
         .content-what-is-kosher {
             display: flex;
             align-items:center;
+
             .text {
                 p {
                     font-family: var(--font-roboto-medium);
+                    font-size: 1.8rem;
                 }
             }
         }

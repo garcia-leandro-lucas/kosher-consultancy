@@ -63,7 +63,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
@@ -427,6 +426,7 @@ li {
 }
 .content-kosher-consultancy #whatIsKosher .content-what-is-kosher .text p {
   font-family: var(--font-roboto-medium);
+  font-size: 1.8rem;
 }
 
 /*
@@ -454,6 +454,8 @@ li {
     /* Start main */
     /* Start section id="carouselHome" */
     /* End section id="carouselHome" */
+    /* Start section id="whatIsKosher" */
+    /* End section id="whatIsKosher" */
     /* End main */
   }
   .content-kosher-consultancy nav .brand-logo object {
@@ -476,6 +478,10 @@ li {
   }
   .content-kosher-consultancy #carouselHome .carousel-caption p {
     font-size: 1rem;
+  }
+  .content-kosher-consultancy #whatIsKosher .content-what-is-kosher .text p {
+    margin-top: 50px;
+    text-align: center;
   }
 
   /*
