@@ -69,20 +69,29 @@
     /*  End fonts  */
 }
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
 // $grid-breakpoints: (
-//     mobile-a: 360px,
-//     tablet-a: 361px,
-//     tablet-b: 767px,
-//     tablet-c: 768px,
-//     tablet-d: 1060px,
-//     desktop: 1061px
+//     x-small: 360px,
+//     small: 576px,
+//     medium: 768px,
+//     large: 992px,
+//     extra-large: 1200px,
+//     extra-extra-large: 1400px
 //  );
 
-// @mixin break-point-tablet($breakpoints) {
-//     @media screen and (max-width: map-get($grid-breakpoints, $breakpoints)){ 
-//         @content;
-//     }
-// }
+@mixin media-breakpoint-down($breakpoints) {
+    @media screen and (max-width: map-get($grid-breakpoints, $breakpoints)){ 
+        @content;
+    }
+}
 
 $colores:
     #ffffff, /* 1 */
