@@ -83,6 +83,7 @@
 
         .information-content {
             width: 100%;
+            margin: 0px auto;
             border-radius: 0px;
 
             .title.container {
@@ -148,6 +149,14 @@
 
     /* Start section id="contactForm" */
     #contactForm {
+        form {
+            width: 100%;
+            
+            button.btn-submit {
+                width: 10em;
+            }        
+        }
+
         .contact-information {
             display: flex;
             flex-direction: column;

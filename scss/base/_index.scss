@@ -398,7 +398,7 @@
                 text-transform: uppercase;
                 background-color: var(--color-green);
                 border: none;
-                padding: 15px 150px;
+                padding: 15px 0px;
                 color: var(--color-white);
                 border-radius: 4px;
                 margin: auto;
@@ -407,6 +407,7 @@
                 justify-content: center;
                 align-items: center;
                 margin-top: 30px;
+                width: 20em;
 
                 &:hover {
                     background-color: var(--color-white);

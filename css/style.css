@@ -653,7 +653,7 @@ li {
   text-transform: uppercase;
   background-color: var(--color-green);
   border: none;
-  padding: 15px 150px;
+  padding: 15px 0px;
   color: var(--color-white);
   border-radius: 4px;
   margin: auto;
@@ -662,6 +662,7 @@ li {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  width: 20em;
 }
 .content-kosher-consultancy #contactForm form button.btn-submit:hover {
   background-color: var(--color-white);
@@ -809,6 +810,7 @@ li {
   }
   .content-kosher-consultancy #aboutUs .information-content {
     width: 100%;
+    margin: 0px auto;
     border-radius: 0px;
   }
   .content-kosher-consultancy #aboutUs .information-content .title.container h2 {
@@ -849,6 +851,12 @@ li {
   }
 }
 @media only screen and (min-width: 360px) and (max-width: 992px) {
+  .content-kosher-consultancy #contactForm form {
+    width: 100%;
+  }
+  .content-kosher-consultancy #contactForm form button.btn-submit {
+    width: 10em;
+  }
   .content-kosher-consultancy #contactForm .contact-information {
     display: flex;
     flex-direction: column;
