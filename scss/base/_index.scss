@@ -79,8 +79,8 @@
     /* Start section id="carouselHome" */
 
     .section-content {
-        margin-top: 100px;
-        margin-bottom: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     #carouselHome {
@@ -122,6 +122,7 @@
                 font-family: var(--font-roboto-bold);
                 font-size: 50px;
                 color: var(--color-green);
+                text-align: center;
             }
         }
 
@@ -141,7 +142,7 @@
 
     /* Start section id="aboutUs" */
     #aboutUs {
-        background-image: url('../src/assets/images/foods/sandwich-kosher.jpg');
+        background-image: url('../src/assets/images/background/sandwich-kosher.webp');
         padding-top: 100px;
         padding-bottom: 100px;
         @extend %bg-image;
@@ -150,7 +151,7 @@
             padding: 50px 20px;
             background-color: var(--color-white-ad);
             width: 60%;
-            margin: auto;
+            margin: 100px auto;
             border-radius: 10px;
             text-align: center;
 
@@ -186,12 +187,14 @@
     /* Start section id="services" */
 
     #services {
+        background-color: var(--color-light-green);
+
         .services-title {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 50px;
-            margin-bottom: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
 
             .icon {
                 object {
@@ -251,6 +254,139 @@
     }
 
     /* End section id="services" */
+
+    /* Start section id="certificationSteps" */
+    #certificationSteps {
+        .title {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            h4 {
+                font-family: var(--font-roboto-bold);
+                font-size: 50px;
+                color: var(--color-green); 
+            }
+        }
+
+        .certification-steps-card {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+
+            .card {
+                background-color: var(--color-light-green);
+                border: 1px solid var(--color-green);
+                width: 30rem;
+                margin: 20px;
+
+                .card-number {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid green;
+                    border-radius: 100px;
+                    text-align: center;
+                    margin: 20px auto;
+                    line-height: 0;
+
+                    p {
+                        font-family: var(--font-roboto-bold);
+                        font-size: 1.8rem;
+                        color: var(--color-green);
+                        margin: 0px;
+                    }
+                }
+
+                .card-icon {
+                    object {
+                        width: 10em;
+                    }
+                }
+
+                .card-body {
+                    h5 {
+                        font-family: var(--font-roboto-bold);
+                        font-size: 20px;
+                        color: var(--color-green);
+                    }
+
+                    p {
+                        font-family: var(--font-roboto-regular);
+                        font-size: 1.8rem;
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 5px 5px 10px 0px #00000020;
+                    transition: all 0.5s;
+
+                }
+            }
+        }
+
+        .legal {
+            background-color: var(--color-green);
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+                h6 {
+                    font-family: var(--font-roboto-bold);
+                    font-size: 16px;
+                    color: var(--color-white); 
+                }
+
+                p {
+                    font-size: 13px;
+                    color: var(--color-white);
+                    margin-bottom: 10px;
+                }
+        }
+    }
+    /* End section id="certificationSteps" */
+
+    /* Start section id="contactForm" */
+    #contactForm {
+        background-image: url('../src/assets/images/background/woman-filling-out-form.webp');
+        padding-top: 100px;
+        padding-bottom: 100px;
+        @extend %bg-image;
+        
+        .title {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            h2 {
+                font-family: var(--font-roboto-bold);
+                font-size: 50px;
+                color: var(--color-green);  
+            }
+        }
+
+        form {
+            input {
+                font-family: var(--font-roboto-light-italic);
+                font-size: 1.8rem;
+            }
+
+            textarea {
+                font-family: var(--font-roboto-light-italic);
+                font-size: 1.8rem;
+            }
+        }
+
+    }
+    /* End section id="contactForm" */
 
     /* End main */
 

@@ -56,6 +56,16 @@
         /* Start section id="whatIsKosher" */
         #whatIsKosher {
             .content-what-is-kosher {
+                .title.container {
+                    text-align: center;
+                    
+                    .row {
+                        h1 {
+                            text-align: center;
+                        }
+                    }
+                }
+
                 .text {
                     p {
                         margin-top: 50px;
@@ -77,7 +87,7 @@
 
             .title.container {
 
-                h1 {
+                h2 {
                     font-family: var(--font-roboto-bold);
                     font-size: 50px;
                     color: var(--color-green);
@@ -109,6 +119,12 @@
             .icon {
                 object {
                     margin-right: 0px;
+                }
+            }
+
+            .title {
+                h3 {
+                    text-align: center;
                 }
             }
         }
