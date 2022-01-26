@@ -358,7 +358,7 @@
         padding-top: 100px;
         padding-bottom: 100px;
         @extend %bg-image;
-        
+
         .title {
             display: flex;
             justify-content: center;
@@ -374,19 +374,142 @@
         }
 
         form {
+            width: 80%;
+            margin: auto;
+
             input {
                 font-family: var(--font-roboto-light-italic);
-                font-size: 1.8rem;
+                font-size: 1.5rem;
+            }
+
+            .form-control {
+                padding: 1rem 0.75rem;
             }
 
             textarea {
                 font-family: var(--font-roboto-light-italic);
-                font-size: 1.8rem;
+                font-size: 1.5rem;
+                min-height: calc(1.5em + 18rem + 2px);
+            }
+
+            button.btn-submit {
+                font-family: var(--font-roboto-bold);
+                font-size: 20px;
+                text-transform: uppercase;
+                background-color: var(--color-green);
+                border: none;
+                padding: 15px 150px;
+                color: var(--color-white);
+                border-radius: 4px;
+                margin: auto;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+
+                &:hover {
+                    background-color: var(--color-white);
+                    outline: 1px solid var(--color-green);
+                    color: var(--color-green);
+                    transition: all 0.5s;
+                }
+            }
+        }
+
+        .contact-information {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            margin-top: 50px;
+            background-color: var(--color-light-green);
+            padding: 10px;
+            border-radius: 4px;
+
+            a {
+                text-decoration: none;
+                color: var(--color-black);
+
+                &:hover {
+                    color: var(--color-green);  
+                    transition: all 0.5s;                  
+                }
+            }
+
+            p {
+                margin-bottom: 0rem;
+            }
+
+            .line {
+                border-right: 1.5px solid var(--color-green);
+                height: 50px;
+            }
+
+            .information-kosher {
+                text-align: right;
+
+                p {
+                    strong {
+                        color: var(--color-green);
+                    }
+                }
             }
         }
 
     }
     /* End section id="contactForm" */
+
+    /* Start section id="footer" */
+    #footer {
+        .footer-content {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            .footer-logo {
+                object {    
+                    width: 20em;
+                }
+            }
+
+            .footer-social-networks {
+                p {
+                    font-family: var(--font-roboto-bold);
+                    font-size: 25px;
+                    color: var(--color-green);
+                }
+
+                .social-netwoks {
+                    i.fab {
+                        font-size: 35px;
+                        padding-right: 20px;
+                        color: var(--color-green);
+
+                        &:hover {
+                            color: var(--color-dark-blue);
+                            transition: all 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-copy {
+            background-color: var(--color-green);
+
+            p {
+                color: var(--color-white);
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+                margin-bottom: 0rem;
+            }
+        }
+    }
+    /* End section id="footer" */
 
     /* End main */
 

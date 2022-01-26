@@ -360,6 +360,8 @@ li {
   /* End section id="certificationSteps" */
   /* Start section id="contactForm" */
   /* End section id="contactForm" */
+  /* Start section id="footer" */
+  /* End section id="footer" */
   /* End main */
 }
 .content-kosher-consultancy nav .brand-logo {
@@ -629,13 +631,108 @@ li {
   font-size: 50px;
   color: var(--color-green);
 }
+.content-kosher-consultancy #contactForm form {
+  width: 80%;
+  margin: auto;
+}
 .content-kosher-consultancy #contactForm form input {
   font-family: var(--font-roboto-light-italic);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+}
+.content-kosher-consultancy #contactForm form .form-control {
+  padding: 1rem 0.75rem;
 }
 .content-kosher-consultancy #contactForm form textarea {
   font-family: var(--font-roboto-light-italic);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  min-height: calc(1.5em + 18rem + 2px);
+}
+.content-kosher-consultancy #contactForm form button.btn-submit {
+  font-family: var(--font-roboto-bold);
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: var(--color-green);
+  border: none;
+  padding: 15px 150px;
+  color: var(--color-white);
+  border-radius: 4px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.content-kosher-consultancy #contactForm form button.btn-submit:hover {
+  background-color: var(--color-white);
+  outline: 1px solid var(--color-green);
+  color: var(--color-green);
+  transition: all 0.5s;
+}
+.content-kosher-consultancy #contactForm .contact-information {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-color: var(--color-light-green);
+  padding: 10px;
+  border-radius: 4px;
+}
+.content-kosher-consultancy #contactForm .contact-information a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+.content-kosher-consultancy #contactForm .contact-information a:hover {
+  color: var(--color-green);
+  transition: all 0.5s;
+}
+.content-kosher-consultancy #contactForm .contact-information p {
+  margin-bottom: 0rem;
+}
+.content-kosher-consultancy #contactForm .contact-information .line {
+  border-right: 1.5px solid var(--color-green);
+  height: 50px;
+}
+.content-kosher-consultancy #contactForm .contact-information .information-kosher {
+  text-align: right;
+}
+.content-kosher-consultancy #contactForm .contact-information .information-kosher p strong {
+  color: var(--color-green);
+}
+.content-kosher-consultancy #footer .footer-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content-kosher-consultancy #footer .footer-content .footer-logo object {
+  width: 20em;
+}
+.content-kosher-consultancy #footer .footer-content .footer-social-networks p {
+  font-family: var(--font-roboto-bold);
+  font-size: 25px;
+  color: var(--color-green);
+}
+.content-kosher-consultancy #footer .footer-content .footer-social-networks .social-netwoks i.fab {
+  font-size: 35px;
+  padding-right: 20px;
+  color: var(--color-green);
+}
+.content-kosher-consultancy #footer .footer-content .footer-social-networks .social-netwoks i.fab:hover {
+  color: var(--color-dark-blue);
+  transition: all 0.5s;
+}
+.content-kosher-consultancy #footer .footer-copy {
+  background-color: var(--color-green);
+}
+.content-kosher-consultancy #footer .footer-copy p {
+  color: var(--color-white);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 0rem;
 }
 
 /*
@@ -669,7 +766,11 @@ li {
     /* End section id="aboutUs" */
     /* Start section id="services" */
     /* End section id="services" */
+    /* Start section id="contactForm" */
+    /* End section id="contactForm" */
     /* End main */
+    /* Start section id="footer" */
+    /* End section id="footer" */
   }
   .content-kosher-consultancy nav .brand-logo object {
     width: 10em;
@@ -745,6 +846,47 @@ li {
   .content-kosher-consultancy #services .services-card .card {
     width: 10em;
     margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 992px) {
+  .content-kosher-consultancy #contactForm .contact-information {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .content-kosher-consultancy #contactForm .contact-information .line {
+    border-right: none;
+    height: 0px;
+    border-bottom: 1.5px solid var(--color-green);
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .content-kosher-consultancy #contactForm .contact-information .information-kosher {
+    text-align: center;
+  }
+  .content-kosher-consultancy #contactForm .contact-information .information-kosher p strong {
+    color: var(--color-green);
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 992px) {
+  .content-kosher-consultancy #footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .content-kosher-consultancy #footer .footer-content .footer-logo object {
+    width: 20em;
+  }
+  .content-kosher-consultancy #footer .footer-content .footer-social-networks p {
+    font-family: var(--font-roboto-bold);
+    font-size: 25px;
+    color: var(--color-green);
+  }
+  .content-kosher-consultancy #footer .footer-content .footer-social-networks .social-netwoks i.fab {
+    font-size: 35px;
+    padding-right: 20px;
+    color: var(--color-green);
   }
 }
 /* Tablet Styles */

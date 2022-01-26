@@ -58,7 +58,7 @@
             .content-what-is-kosher {
                 .title.container {
                     text-align: center;
-                    
+
                     .row {
                         h1 {
                             text-align: center;
@@ -146,7 +146,70 @@
 
     /* End section id="services" */
 
+    /* Start section id="contactForm" */
+    #contactForm {
+        .contact-information {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .line {
+                border-right: none;
+                height: 0px;
+                border-bottom: 1.5px solid var(--color-green);
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .information-kosher {
+                text-align: center;
+
+                p {
+                    strong {
+                        color: var(--color-green);
+                    }
+                }
+            }
+        }
+
+    }
+    /* End section id="contactForm" */
+
         /* End main */
+
+    /* Start section id="footer" */
+    #footer {
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .footer-logo {
+                object {    
+                    width: 20em;
+                }
+            }
+
+            .footer-social-networks {
+                p {
+                    font-family: var(--font-roboto-bold);
+                    font-size: 25px;
+                    color: var(--color-green);
+                }
+
+                .social-netwoks {
+                    i.fab {
+                        font-size: 35px;
+                        padding-right: 20px;
+                        color: var(--color-green);
+                    }
+                }
+            }
+        }
+    }
+    /* End section id="footer" */
+
     }
 
 
