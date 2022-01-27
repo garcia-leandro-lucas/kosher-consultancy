@@ -150,42 +150,43 @@
     /* Start section id="aboutUs" */
     #aboutUs {
         background-image: url('../src/assets/images/background/sandwich-kosher.webp');
-        padding-top: 100px;
-        padding-bottom: 100px;
+        margin-top: 100px;
         @extend %bg-image;
 
-        .information-content {
-            padding: 50px 20px;
-            background-color: var(--color-white-ad);
-            width: 60%;
-            margin: 100px auto;
-            border-radius: 10px;
-            text-align: center;
+        .background {
+                background-color: var(--color-black-50);
+                padding-bottom: 100px;
+                padding-top: 100px;
 
-            .title.container {
-                display: flex;
-                justify-content: center;
-                margin-bottom: 30px;
+            .information-content {
+                padding: 50px 20px;
+                width: 60%;
+                margin: 100px auto;
+                border-radius: 10px;
+                text-align: center;
 
-                h2 {
-                    font-family: var(--font-roboto-bold);
-                    font-size: 50px;
-                    color: var(--color-green);
-                }
-            }
+                .title.container {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 30px;
 
-            .content-about-us {
-                .text {
-                    p {
-                        font-family: var(--font-roboto-medium);
-                        font-size: 1.8rem;
-
-                        strong {
-                            color: var(--color-green);
-                        }
+                    h2 {
+                        font-family: var(--font-roboto-bold);
+                        font-size: 50px;
+                        color: var(--color-white);
                     }
                 }
-            }  
+
+                .content-about-us {
+                    .text {
+                        p {
+                            font-family: var(--font-roboto-medium);
+                            font-size: 1.8rem;
+                            color: var(--color-white);
+                        }
+                    }
+                }  
+            }
         }
         
     }
@@ -338,23 +339,39 @@
         }
 
         .legal {
-            background-color: var(--color-green);
             text-align: center;
             margin-top: 50px;
             padding-top: 50px;
             padding-bottom: 50px;
 
+            .container {
+                border: 1px solid var(--color-black);
+                border-radius: 4px;
+                padding: 20px 50px;
+
+                .legal-icon {
+                    object {
+                        width: 10em;
+                    }
+                }
+
                 h6 {
                     font-family: var(--font-roboto-bold);
-                    font-size: 16px;
-                    color: var(--color-white); 
+                    font-size: 20px;
+                    color: var(--color-green); 
+                }
+
+                hr {
+                    margin-top: 30px;
+                    margin-bottom: 30px;
                 }
 
                 p {
-                    font-size: 13px;
-                    color: var(--color-white);
+                    font-size: 16px;
+                    color: var(--color-black);
                     margin-bottom: 10px;
                 }
+            }            
         }
     }
     /* End section id="certificationSteps" */

@@ -48,7 +48,7 @@
   /*  End measures  */
   /* Colours */
   --color-white: #ffffff;
-  --color-white-ad: #ffffffad;
+  --color-black-50: #00000050;
   --color-black: #000000;
   --color-green: #017a38;
   --color-light-green: #daece0;
@@ -464,33 +464,34 @@ li {
 }
 .content-kosher-consultancy #aboutUs {
   background-image: url("../src/assets/images/background/sandwich-kosher.webp");
-  padding-top: 100px;
-  padding-bottom: 100px;
+  margin-top: 100px;
 }
-.content-kosher-consultancy #aboutUs .information-content {
+.content-kosher-consultancy #aboutUs .background {
+  background-color: var(--color-black-50);
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.content-kosher-consultancy #aboutUs .background .information-content {
   padding: 50px 20px;
-  background-color: var(--color-white-ad);
   width: 60%;
   margin: 100px auto;
   border-radius: 10px;
   text-align: center;
 }
-.content-kosher-consultancy #aboutUs .information-content .title.container {
+.content-kosher-consultancy #aboutUs .background .information-content .title.container {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-.content-kosher-consultancy #aboutUs .information-content .title.container h2 {
+.content-kosher-consultancy #aboutUs .background .information-content .title.container h2 {
   font-family: var(--font-roboto-bold);
   font-size: 50px;
-  color: var(--color-green);
+  color: var(--color-white);
 }
-.content-kosher-consultancy #aboutUs .information-content .content-about-us .text p {
+.content-kosher-consultancy #aboutUs .background .information-content .content-about-us .text p {
   font-family: var(--font-roboto-medium);
   font-size: 1.8rem;
-}
-.content-kosher-consultancy #aboutUs .information-content .content-about-us .text p strong {
-  color: var(--color-green);
+  color: var(--color-white);
 }
 .content-kosher-consultancy #services {
   background-color: var(--color-light-green);
@@ -602,20 +603,31 @@ li {
   transition: all 0.5s;
 }
 .content-kosher-consultancy #certificationSteps .legal {
-  background-color: var(--color-green);
   text-align: center;
   margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.content-kosher-consultancy #certificationSteps .legal h6 {
-  font-family: var(--font-roboto-bold);
-  font-size: 16px;
-  color: var(--color-white);
+.content-kosher-consultancy #certificationSteps .legal .container {
+  border: 1px solid var(--color-black);
+  border-radius: 4px;
+  padding: 20px 50px;
 }
-.content-kosher-consultancy #certificationSteps .legal p {
-  font-size: 13px;
-  color: var(--color-white);
+.content-kosher-consultancy #certificationSteps .legal .container .legal-icon object {
+  width: 10em;
+}
+.content-kosher-consultancy #certificationSteps .legal .container h6 {
+  font-family: var(--font-roboto-bold);
+  font-size: 20px;
+  color: var(--color-green);
+}
+.content-kosher-consultancy #certificationSteps .legal .container hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.content-kosher-consultancy #certificationSteps .legal .container p {
+  font-size: 16px;
+  color: var(--color-black);
   margin-bottom: 10px;
 }
 .content-kosher-consultancy #contactForm {
@@ -824,17 +836,21 @@ li {
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  .content-kosher-consultancy #aboutUs .information-content {
+  .content-kosher-consultancy #aboutUs .background {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .content-kosher-consultancy #aboutUs .background .information-content {
     width: 100%;
     margin: 0px auto;
     border-radius: 0px;
   }
-  .content-kosher-consultancy #aboutUs .information-content .title.container h2 {
+  .content-kosher-consultancy #aboutUs .background .information-content .title.container h2 {
     font-family: var(--font-roboto-bold);
     font-size: 35px;
-    color: var(--color-green);
+    color: var(--color-white);
   }
-  .content-kosher-consultancy #aboutUs .information-content .content-about-us .text p {
+  .content-kosher-consultancy #aboutUs .background .information-content .content-about-us .text p {
     font-family: var(--font-roboto-medium);
     font-size: 1.8rem;
   }
@@ -857,6 +873,13 @@ li {
   }
   .content-kosher-consultancy #certificationSteps .title h4 {
     font-size: 35px;
+  }
+  .content-kosher-consultancy #certificationSteps .legal {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .content-kosher-consultancy #certificationSteps .legal .container {
+    padding: 20px 20px;
   }
   .content-kosher-consultancy #contactForm {
     padding-top: 50px;

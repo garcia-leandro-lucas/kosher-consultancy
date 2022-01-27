@@ -99,29 +99,34 @@
         padding-top: 0px;
         padding-bottom: 0px;
 
-        .information-content {
-            width: 100%;
-            margin: 0px auto;
-            border-radius: 0px;
+        .background {
+            padding-bottom: 50px;
+            padding-top: 50px;
+            
+            .information-content {
+                width: 100%;
+                margin: 0px auto;
+                border-radius: 0px;
 
-            .title.container {
+                .title.container {
 
-                h2 {
-                    font-family: var(--font-roboto-bold);
-                    font-size: 35px;
-                    color: var(--color-green);
-                }
-            }
-
-            .content-about-us {
-
-                .text {
-                    p {
-                        font-family: var(--font-roboto-medium);
-                        font-size: 1.8rem;
+                    h2 {
+                        font-family: var(--font-roboto-bold);
+                        font-size: 35px;
+                        color: var(--color-white);
                     }
                 }
-            }  
+
+                .content-about-us {
+
+                    .text {
+                        p {
+                            font-family: var(--font-roboto-medium);
+                            font-size: 1.8rem;
+                        }
+                    }
+                }  
+            }
         }
         
     }
@@ -153,13 +158,6 @@
             display: grid;
             grid-template-rows: repeat(1, 1fr);
             grid-template-columns: repeat(1, 1fr);
-
-            // @include media-breakpoint-down(sm) {
-            //     .card {
-            //         width: 20em;
-            //         margin-bottom: 30px;
-            //     }
-            // }
         }
 
     }
@@ -172,6 +170,15 @@
             h4 {
                 font-size: 35px;
             }
+        }
+
+        .legal {
+            margin-right: 20px;
+            margin-left: 20px;
+
+            .container {
+                padding: 20px 20px;
+            }            
         }
     }
     /* End section id="certificationSteps" */
