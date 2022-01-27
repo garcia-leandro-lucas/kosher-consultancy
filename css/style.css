@@ -374,6 +374,10 @@ li {
 .content-kosher-consultancy nav .brand-logo .brand-logo-object object {
   width: 14em;
 }
+.content-kosher-consultancy nav .brand-logo .brand-logo-slogan p {
+  margin-bottom: 0rem;
+  line-height: 1.5;
+}
 .content-kosher-consultancy nav .navigation-links {
   justify-content: end;
 }
@@ -515,7 +519,7 @@ li {
   justify-items: center;
 }
 .content-kosher-consultancy #services .services-card .card {
-  width: 18em;
+  width: 16em;
   margin-bottom: 30px;
 }
 .content-kosher-consultancy #services .services-card .card .card-image {
@@ -749,7 +753,7 @@ li {
  * #######################
  * #######################
 */
-/* Mobile Styles */
+/* Mobile Styles and Tablet */
 @media only screen and (min-width: 360px) and (max-width: 992px) {
   /*
    * Inicio de index.html
@@ -767,20 +771,30 @@ li {
     /* End section id="aboutUs" */
     /* Start section id="services" */
     /* End section id="services" */
+    /* Start section id="certificationSteps" */
+    /* End section id="certificationSteps" */
     /* Start section id="contactForm" */
     /* End section id="contactForm" */
     /* End main */
     /* Start section id="footer" */
     /* End section id="footer" */
   }
-  .content-kosher-consultancy nav .brand-logo object {
+  .content-kosher-consultancy nav .brand-logo .brand-logo-object object {
     width: 10em;
+  }
+  .content-kosher-consultancy nav .brand-logo-slogan p {
+    font-size: 12px;
+    line-height: 1.2;
   }
   .content-kosher-consultancy nav .navigation-links {
     justify-content: center;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .content-kosher-consultancy .section-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .content-kosher-consultancy #carouselHome {
     margin-top: 70px;
@@ -794,13 +808,15 @@ li {
   .content-kosher-consultancy #carouselHome .carousel-caption p {
     font-size: 1rem;
   }
-  .content-kosher-consultancy #whatIsKosher .content-what-is-kosher .title.container {
+  .content-kosher-consultancy #whatIsKosher .title.container {
     text-align: center;
   }
-  .content-kosher-consultancy #whatIsKosher .content-what-is-kosher .title.container .row h1 {
+  .content-kosher-consultancy #whatIsKosher .title.container .row h1 {
+    font-size: 35px;
     text-align: center;
   }
   .content-kosher-consultancy #whatIsKosher .content-what-is-kosher .text p {
+    font-size: 1.5rem;
     margin-top: 50px;
     text-align: center;
   }
@@ -815,7 +831,7 @@ li {
   }
   .content-kosher-consultancy #aboutUs .information-content .title.container h2 {
     font-family: var(--font-roboto-bold);
-    font-size: 50px;
+    font-size: 35px;
     color: var(--color-green);
   }
   .content-kosher-consultancy #aboutUs .information-content .content-about-us .text p {
@@ -831,26 +847,24 @@ li {
     margin-right: 0px;
   }
   .content-kosher-consultancy #services .services-title .title h3 {
+    font-size: 35px;
     text-align: center;
   }
   .content-kosher-consultancy #services .services-card {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
-
-  /*
-   * Fin de index.html
-   *
-  */
-}
-@media only screen and (min-width: 360px) and (max-width: 992px) and (max-width: 576px) {
-  .content-kosher-consultancy #services .services-card .card {
-    width: 10em;
-    margin-bottom: 30px;
+  .content-kosher-consultancy #certificationSteps .title h4 {
+    font-size: 35px;
   }
-}
-@media only screen and (min-width: 360px) and (max-width: 992px) {
+  .content-kosher-consultancy #contactForm {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .content-kosher-consultancy #contactForm .title h2 {
+    font-size: 35px;
+  }
   .content-kosher-consultancy #contactForm form {
     width: 100%;
   }
@@ -876,8 +890,6 @@ li {
   .content-kosher-consultancy #contactForm .contact-information .information-kosher p strong {
     color: var(--color-green);
   }
-}
-@media only screen and (min-width: 360px) and (max-width: 992px) {
   .content-kosher-consultancy #footer .footer-content {
     display: flex;
     flex-direction: column;
@@ -896,9 +908,30 @@ li {
     padding-right: 20px;
     color: var(--color-green);
   }
+  .content-kosher-consultancy #footer .footer-copy p {
+    font-size: 13px;
+  }
+
+  /*
+   * Fin de index.html
+   *
+  */
 }
-/* Tablet Styles */
 /* Desktop Styles */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* Start section id="services" */
+  #services .services-card {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #services .services-card .card {
+    width: 14em !important;
+    margin-bottom: 30px;
+  }
+
+  /* End section id="services" */
+}
 /*
  * #######################
  * #######################

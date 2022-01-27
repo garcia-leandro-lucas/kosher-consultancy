@@ -17,6 +17,13 @@
                     width: 14em;
                 }
             }
+
+            .brand-logo-slogan {
+                p {
+                    margin-bottom: 0rem;
+                    line-height: 1.5;
+                }
+            } 
         } 
 
         .navigation-links {
@@ -219,7 +226,7 @@
             justify-items: center;
 
             .card {
-                width: 18em;
+                width: 16em;
                 margin-bottom: 30px;
 
                 .card-image {
