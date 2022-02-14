@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  Starting external fonts  */
 @font-face {
   font-family: "Roboto Regular";
@@ -425,12 +426,16 @@ li {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.content-kosher-consultancy #carouselHome {
+  /* Opción de color */
+  /* Fin de Opción de color */
+}
 .content-kosher-consultancy #carouselHome .carousel-caption {
   background-color: #017a38c4;
   border-radius: 4px;
   bottom: 5rem;
 }
-.content-kosher-consultancy #carouselHome .carousel-caption h1, .content-kosher-consultancy #carouselHome .carousel-caption h2 {
+.content-kosher-consultancy #carouselHome .carousel-caption h1 {
   font-family: var(--font-roboto-condensed-bold);
   font-size: 3.125em;
   /* 50/16 */
@@ -439,6 +444,23 @@ li {
 .content-kosher-consultancy #carouselHome .carousel-caption p {
   font-family: var(--font-roboto-condensed-regular);
   font-size: 2.5rem;
+}
+.content-kosher-consultancy #carouselHome .carousel-caption.opcion-2 {
+  background-color: #ffffffde;
+  border-radius: 4px;
+  bottom: 5rem;
+}
+.content-kosher-consultancy #carouselHome .carousel-caption.opcion-2 h2 {
+  font-family: var(--font-roboto-condensed-bold);
+  font-size: 3.125em;
+  /* 50/16 */
+  font-weight: 800;
+  color: var(--color-green);
+}
+.content-kosher-consultancy #carouselHome .carousel-caption.opcion-2 p {
+  font-family: var(--font-roboto-condensed-regular);
+  font-size: 2.5rem;
+  color: var(--color-green);
 }
 .content-kosher-consultancy #carouselHome button .carousel-control-next-icon, .content-kosher-consultancy #carouselHome button .carousel-control-prev-icon {
   width: 10rem;
