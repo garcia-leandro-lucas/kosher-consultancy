@@ -838,10 +838,19 @@ li {
   .content-kosher-consultancy #carouselHome .carousel-caption {
     bottom: 3rem;
   }
-  .content-kosher-consultancy #carouselHome .carousel-caption h5 {
-    font-size: 1.5rem;
+  .content-kosher-consultancy #carouselHome .carousel-caption h1, .content-kosher-consultancy #carouselHome .carousel-caption h2 {
+    font-size: 2rem;
   }
   .content-kosher-consultancy #carouselHome .carousel-caption p {
+    font-size: 1rem;
+  }
+  .content-kosher-consultancy #carouselHome .carousel-caption.opcion-2 {
+    bottom: 3rem;
+  }
+  .content-kosher-consultancy #carouselHome .carousel-caption.opcion-2 h2 {
+    font-size: 2rem;
+  }
+  .content-kosher-consultancy #carouselHome .carousel-caption.opcion-2 p {
     font-size: 1rem;
   }
   .content-kosher-consultancy #whatIsKosher .title.container {
